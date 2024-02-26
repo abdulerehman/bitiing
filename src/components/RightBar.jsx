@@ -1,6 +1,6 @@
 const RightBar = () => {
   return (
-    <div className="w-[350px] h-full bg-secondary">
+    <div className="h-[88.9vh] bg-secondary">
       <div className="bg-black h-14 flex flex-col justify-center">
         <p className="text-white text-center font-bold text-2xl">Bet Slip</p>
       </div>
@@ -11,7 +11,7 @@ const RightBar = () => {
         </div>
         <p className="pl-2 text-gray-400 text-[14px]">MONEYLINE</p>
         <p className="pl-2 text-[12px]">Los Angeles Lakers @ Brooklyn Nets</p>
-        <div className="flex items-center justify-between px-4 py-2">
+        <div className="flex gap-6 items-center justify-between px-4 py-2">
           <div className="border border-primary p-1">
             <p className="text-[12px]">WAGER</p>
             <div className="flex items-center">
