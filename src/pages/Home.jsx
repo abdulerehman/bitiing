@@ -33,7 +33,7 @@ const Row = ({ text, yes, no }) => {
 
 const Home = () => {
   return (
-    <div className="h-[88.9vh] flex-1">
+    <div className="h-[88.9vh] flex flex-col flex-1">
       <div className="flex items-center justify-center">
         <div className="flex gap-6 items-center justify-center p-4">
           <Link to="/create">
@@ -124,12 +124,14 @@ const Home = () => {
           {">"}
         </button>
       </div>
-      <div className="flex items-center px-2 gap-4 justify-start py-2">
-        <Item active text="US Elections" />
-        <Item text="NBA" />
-        <Item text="NFL" />
-        <Item text="Covid vaccines" />
-        <Item text="Entertainment" />
+      <div className="flex items-center px-2 gap-4 justify-between py-2">
+        <div className="flex gap-4 items-center justify-start">
+          <Item active text="US Elections" />
+          <Item text="NBA" />
+          <Item text="NFL" />
+          <Item text="Covid vaccines" />
+          <Item text="Entertainment" />
+        </div>
         <button className="bg-primary text-2xl font-bold text-white rounded-full w-10 h-10">
           {">"}
         </button>
