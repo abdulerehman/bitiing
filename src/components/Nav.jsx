@@ -1,4 +1,5 @@
 import Image from "./PropX Logo.png";
+import { Link } from "react-router-dom";
 
 const Search = () => (
   <svg
@@ -20,7 +21,9 @@ const Search = () => (
 export const Nav = () => {
   return (
     <div className="w-full px-6 h-24 flex items-center justify-between bg-primary">
-      <img src={Image} />
+      <Link to="/">
+        <img src={Image} className="cursor-pointer" />
+      </Link>
       <div className="flex ml-6 bg-white items-center rounded-md">
         <Search />
         <input
@@ -30,7 +33,9 @@ export const Nav = () => {
         />
       </div>
       <div className="flex items-center md:gap-4 lg:gap-12">
-        <p className="text-2xl">My Bets</p>
+        <Link to="/bets">
+          <p className="text-2xl">My Bets</p>
+        </Link>
         <p className="text-2xl">Promotions</p>
       </div>
       <div className="flex items-center md:gap-4 lg:gap-12">

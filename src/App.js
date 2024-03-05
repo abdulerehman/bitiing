@@ -2,22 +2,31 @@ import "./App.css";
 import { Nav } from "./components/Nav";
 import RightBar from "./components/RightBar";
 import { Side } from "./components/Side";
-import MyBets from "./pages/MyBets";
 import Events from "./pages/Events";
 import Home from "./pages/Home";
-import Settled from "./pages/Settled";
+import MyBets from "./pages/Settled";
 import CreateMarket from "./pages/CreateMarket";
+import { Outlet } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      <Nav />
-      <div className="flex bg-gray-100">
-        <Side />
-        <Settled />
-        <RightBar />
+    <Router>
+      <div>
+        <Nav />
+        <div className="flex bg-gray-100">
+          <Side />
+          <Routes>
+            <Route path="/" exact element={<Home />} />
+            <Route path="/create" element={<CreateMarket />} />
+            <Route path="/bets" element={<MyBets />} />
+            <Route path="/events" element={<Events />} />
+          </Routes>
+          <RightBar />
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 

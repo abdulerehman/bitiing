@@ -3,9 +3,10 @@ import Banner from "../components/Banner";
 import { ReactComponent as Arrow } from "../components/arrow.svg";
 import { ReactComponent as ArrowDown } from "../components/image 8.svg";
 
-const Box = ({ text, active }) => {
+const Box = ({ text, active, click }) => {
   return (
     <button
+      onClick={click}
       className={`border-primary border-2 flex items-center justify-center ${
         active ? "bg-primary" : "bg-white"
       } w-[200px] h-[100px]`}
@@ -15,21 +16,21 @@ const Box = ({ text, active }) => {
   );
 };
 
-const SelectTopic = () => {
+const SelectTopic = ({ setWidget }) => {
   return (
     <>
       <Banner text="Select a Topic" />
       <div className="flex">
         <div className="py-12 px-4 flex-wrap gap-3 flex items-center justify-center">
-          <Box text="NFL" active />
-          <Box text="Weather" />
-          <Box text="Oscars" />
-          <Box text="Natural Disasters" />
-          <Box text="Movies" />
-          <Box text="Politics" />
-          <Box text="NBA" />
-          <Box text="NHL" />
-          <Box text="Emmys" />
+          <Box click={() => {}} text="NFL" active />
+          <Box click={() => setWidget(2)} text="Weather" />
+          <Box click={() => {}} text="Oscars" />
+          <Box click={() => {}} text="Natural Disasters" />
+          <Box click={() => {}} text="Movies" />
+          <Box click={() => {}} text="Politics" />
+          <Box click={() => {}} text="NBA" />
+          <Box click={() => {}} text="NHL" />
+          <Box click={() => {}} text="Emmys" />
         </div>
         <div className="flex items-center justify-center px-2">
           <button className="bg-primary rounded-full w-10 h-10">
@@ -61,7 +62,7 @@ const Select = ({ text }) => {
   );
 };
 
-const SelectEvent = () => {
+const SelectEvent = ({ setWidget }) => {
   return (
     <>
       <Banner text="Select Event - Weather" />
@@ -82,6 +83,14 @@ const SelectEvent = () => {
             placeholder="Type entry"
           />
         </div>
+        <div className="flex flex-1 items-end justify-end">
+          <button
+            onClick={() => setWidget(3)}
+            className="rounded-full bg-primary px-[13px] py-1 font-bold text-white text-3xl"
+          >
+            {">"}
+          </button>
+        </div>
       </div>
     </>
   );
@@ -89,14 +98,13 @@ const SelectEvent = () => {
 
 const Button = ({ text, active, click }) => {
   return (
-    <button
-      onClick={() => click()}
+    <div
       className={`w-[150px] text-center border-primary border-2 ${
         active ? "bg-primary" : "bg-white"
       }`}
     >
       <p className={`${active ? "text-white" : "text-primary"}`}>{text}</p>
-    </button>
+    </div>
   );
 };
 
@@ -130,26 +138,14 @@ const CreateMarket = () => {
     <div className="flex-1">
       <Banner text="Create a Market" />
       <div className="flex items-center justify-center py-16 px-8">
-        <Button
-          click={() => setWidget(1)}
-          text="Select a topic"
-          active={widget === 1}
-        />
+        <Button text="Select a topic" active={widget === 1} />
         <span className="bg-primary px-1 py-[1px] flex-1"></span>
-        <Button
-          click={() => setWidget(2)}
-          text="Select Attributes"
-          active={widget === 2}
-        />
+        <Button text="Select Attributes" active={widget === 2} />
         <span className="bg-primary px-1 py-[1px] flex-1"></span>
-        <Button
-          click={() => setWidget(3)}
-          text="Confirm Selection"
-          active={widget === 3}
-        />
+        <Button text="Confirm Selection" active={widget === 3} />
       </div>
-      {widget === 1 && <SelectTopic />}
-      {widget === 2 && <SelectEvent />}
+      {widget === 1 && <SelectTopic setWidget={setWidget} />}
+      {widget === 2 && <SelectEvent setWidget={setWidget} />}
       {widget === 3 && <ConfirmSelection />}
     </div>
   );
