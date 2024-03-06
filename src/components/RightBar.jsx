@@ -1,10 +1,10 @@
 const RightBar = () => {
   return (
-    <div className="h-[88.9vh] bg-secondary">
+    <div className="h-[89.9vh] bg-secondary">
       <div className="bg-black h-14 flex flex-col justify-center">
         <p className="text-white text-center font-bold text-2xl">Bet Slip</p>
       </div>
-      <div className="mt-6 bg-mywhite">
+      <div className="mt-6 bg-mywhite px-4">
         <div className="flex justify-between items-center px-2 py-1">
           <p className="text-[18px]">Los Angeles Lakers</p>
           <p className="border border-primary p-2">Odds</p>
@@ -18,7 +18,7 @@ const RightBar = () => {
               <p className="text-[12px]">$</p>
               <input
                 type="text"
-                className="text-[12px] border-none w-20 pl-2 bg-mywhite"
+                className="text-[12px] border-none w-[80px] pl-2 bg-mywhite"
               />
             </div>
           </div>
@@ -28,7 +28,7 @@ const RightBar = () => {
               <p className="text-[12px]">$</p>
               <input
                 type="text"
-                className="border-none text-[12px] w-20 pl-2 bg-mywhite"
+                className="border-none text-[12px] w-[80px] pl-2 bg-mywhite"
               />
             </div>
           </div>

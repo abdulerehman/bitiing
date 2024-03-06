@@ -19,7 +19,7 @@ const Item = ({ active, text }) => {
 const Row = ({ text, yes, no }) => {
   return (
     <div className="flex justify-between items-center">
-      <div className="flex gap-2 items-center">
+      <div className="flex px-4 gap-2 items-center">
         <div className="p-4 rounded-full bg-gray-200"></div>
         <p>{text}</p>
       </div>
@@ -82,8 +82,8 @@ const Home = () => {
           </Link>
           <Link to="/events">
             <div className="border-primary text-center bg-white border-2 flex flex-col items-center justify-start w-52 h-52">
-              <p className="mb-2 mt-2 text-md">Barbenheimer</p>
-              <p className="mb-4 mt-2">
+              <p className="py-2 text-md">Barbenheimer</p>
+              <p className="pb-4 pt-2 px-2 text-sm">
                 Combined opening weekend will be over 300mm?
               </p>
               <div className="flex justify-between w-full px-8">

@@ -17,7 +17,7 @@ const Arrow = () => (
 
 export const Side = () => {
   return (
-    <div className="bg-black px-6  h-[88.9vh] flex flex-col">
+    <div className="bg-black px-6  h-[90vh] flex flex-col">
       <p className="text-white font-bold mt-4 ml-2 text-2xl">Favorites</p>
       <p className="text-white font-bold mt-6 ml-2 text-2xl">Popular</p>
       <div className="flex flex-col mt-4 gap-3">

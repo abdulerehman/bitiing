@@ -25,6 +25,11 @@ function App() {
           </Routes>
           <RightBar />
         </div>
+        <div className="w-full bg-primary py-8 px-8 flex gap-6">
+          <p className="text-xl">About</p>
+          <p className="text-xl">House Rules</p>
+          <p className="text-xl">Contact</p>
+        </div>
       </div>
     </Router>
   );
