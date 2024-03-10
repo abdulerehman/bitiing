@@ -38,10 +38,30 @@ const SelectTopic = ({ setWidget }) => {
           </button>
         </div>
       </div>
-      <div className="flex my-8 items-center justify-center">
+      <div className="flex mt-8 mb-10 items-center justify-center">
         <span className="bg-primary flex-1 h-1"></span>
         <p className="text-xl mx-2 font-bold text-primary">OR</p>
         <span className="bg-primary flex-1 py-[2px]"></span>
+      </div>
+      <Banner text="Create a Custom Market" />
+      <div className="mb-16 px-8">
+        <p className="font-bold my-5 text-xl text-primary">
+          Markets created here will be reviewed
+        </p>
+        <p className="font-bold my-5 text-xl text-primary">Market</p>
+        <input
+          type="text"
+          placeholder="Text Entry"
+          className="bg-gray-300 text-black py-1 px-2 w-full border-2 border-primary"
+        />
+        <p className="font-bold my-5 text-xl text-primary">
+          How would you like the market to be settled
+        </p>
+        <input
+          type="text"
+          placeholder="Text Entry"
+          className="bg-gray-300 text-black py-1 px-2 w-full border-2 border-primary"
+        />
       </div>
     </>
   );

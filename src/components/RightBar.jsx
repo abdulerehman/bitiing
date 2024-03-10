@@ -1,6 +1,6 @@
 const RightBar = () => {
   return (
-    <div className="h-[89.9vh] bg-secondary">
+    <div className="flex-y-1 bg-secondary">
       <div className="bg-black h-14 flex flex-col justify-center">
         <p className="text-white text-center font-bold text-2xl">Bet Slip</p>
       </div>
