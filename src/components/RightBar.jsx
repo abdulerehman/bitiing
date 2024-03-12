@@ -1,10 +1,19 @@
+import { useEffect, useState } from "react";
+
 const RightBar = () => {
+  /*   const [display, setDisplay] = useState(false);
+  useEffect(() => {
+    setDisplay(
+      window.location.pathname == "/" || window.location.pathname == "/"
+    );
+  }, [window.location.pathname]);
+ */
   return (
     <div className="flex-y-1 bg-secondary">
       <div className="bg-black h-14 flex flex-col justify-center">
         <p className="text-white text-center font-bold text-2xl">Bet Slip</p>
       </div>
-      <div className="mt-6 bg-mywhite px-4">
+      <div className="mt-6 bg-mywhite px-4 mx-2">
         <div className="flex justify-between items-center px-2 py-1">
           <p className="text-[18px]">Los Angeles Lakers</p>
           <p className="border border-primary p-2">Odds</p>
@@ -13,7 +22,7 @@ const RightBar = () => {
         <p className="pl-2 text-[12px]">Los Angeles Lakers @ Brooklyn Nets</p>
         <div className="flex gap-6 items-center justify-between px-4 py-2">
           <div className="border border-primary p-1">
-            <p className="text-[12px]">WAGER</p>
+            <p className="text-[12px]">TO WAGER</p>
             <div className="flex items-center">
               <p className="text-[12px]">$</p>
               <input
@@ -34,10 +43,17 @@ const RightBar = () => {
           </div>
         </div>
         <div className="w-full pb-4 flex items-center justify-center">
-          <button className="bg-primary mt-4 text-white font-bold text-xl w-[150px] px-8">
-            Place $X to win $Y
+          <button className="bg-primary mt-4 text-white font-bold w-[150px] px-6">
+            <p className="whitespace-nowrap">Place $X</p>
+            <p className="whitespace-nowrap">to win $Y</p>
           </button>
         </div>
+      </div>
+
+      <div className="bg-black py-2 mt-32 flex flex-col justify-center">
+        <button className="text-white text-center font-bold text-2xl">
+          Create Market
+        </button>
       </div>
     </div>
   );
