@@ -63,31 +63,31 @@ const Events = () => {
                 </div>
                 <div className="flex flex-col gap-2 justify-center items-center">
                   <p className="py-3 px-5 border border-primary bg-gray-100">
-                    --210
+                    -210
                   </p>
                   <p>$1,200</p>
                 </div>
                 <div className="flex flex-col gap-2 justify-center items-center">
                   <p className="py-3 px-5 border border-primary bg-primary text-white font-bold">
-                    --200
+                    -200
                   </p>
                   <p>$1,200</p>
                 </div>
                 <div className="flex flex-col gap-2 justify-center items-center">
                   <p className="py-3 px-5 border border-purple-700 bg-purple-700 text-white font-bold">
-                    -220
+                    +180
                   </p>
                   <p>$1,200</p>
                 </div>
                 <div className="flex flex-col gap-2 justify-center items-center">
                   <p className="py-3 px-5 border border-purple-700 bg-gray-100">
-                    -220
+                    +170
                   </p>
                   <p>$1,200</p>
                 </div>
                 <div className="flex flex-col gap-2 justify-center items-center">
                   <p className="py-3 px-5 border border-purple-700 bg-gray-100">
-                    -220
+                    +165
                   </p>
                   <p>$1,200</p>
                 </div>
@@ -100,43 +100,43 @@ const Events = () => {
             </div>
             <div className="flex flex-col items-center justify-center">
               <div className="flex gap-6 items-center my-3 justify-center">
-                <p className="py-3 px-5 border">PHI</p>
-                <p className="py-3 px-5 border">BKN</p>
+                <p className="py-3 px-5 border">PHI (-3.5)</p>
+                <p className="py-3 px-5 border">BKN (+3.5)</p>
               </div>
               <div className="flex gap-6 items-center my-3 justify-center">
                 <div className="flex flex-col gap-2 justify-center items-center">
                   <p className="py-3 px-5 border border-primary bg-gray-100">
-                    --220
+                    -115
                   </p>
                   <p>$1,200</p>
                 </div>
                 <div className="flex flex-col gap-2 justify-center items-center">
                   <p className="py-3 px-5 border border-primary bg-gray-100">
-                    --210
+                    -112
                   </p>
                   <p>$1,200</p>
                 </div>
                 <div className="flex flex-col gap-2 justify-center items-center">
                   <p className="py-3 px-5 border border-primary bg-primary text-white font-bold">
-                    --200
+                    -110
                   </p>
                   <p>$1,200</p>
                 </div>
                 <div className="flex flex-col gap-2 justify-center items-center">
                   <p className="py-3 px-5 border border-purple-700 bg-purple-700 text-white font-bold">
-                    -220
+                    --110
                   </p>
                   <p>$1,200</p>
                 </div>
                 <div className="flex flex-col gap-2 justify-center items-center">
                   <p className="py-3 px-5 border border-purple-700 bg-gray-100">
-                    -220
+                    -111
                   </p>
                   <p>$1,200</p>
                 </div>
                 <div className="flex flex-col gap-2 justify-center items-center">
                   <p className="py-3 px-5 border border-purple-700 bg-gray-100">
-                    -220
+                    -120
                   </p>
                   <p>$1,200</p>
                 </div>
@@ -155,37 +155,37 @@ const Events = () => {
               <div className="flex gap-6 items-center my-3 justify-center">
                 <div className="flex flex-col gap-2 justify-center items-center">
                   <p className="py-3 px-5 border border-primary bg-gray-100">
-                    --220
+                    -115
                   </p>
                   <p>$1,200</p>
                 </div>
                 <div className="flex flex-col gap-2 justify-center items-center">
                   <p className="py-3 px-5 border border-primary bg-gray-100">
-                    --210
+                    -111
                   </p>
                   <p>$1,200</p>
                 </div>
                 <div className="flex flex-col gap-2 justify-center items-center">
                   <p className="py-3 px-5 border border-primary bg-primary text-white font-bold">
-                    --200
+                    -110
                   </p>
                   <p>$1,200</p>
                 </div>
                 <div className="flex flex-col gap-2 justify-center items-center">
                   <p className="py-3 px-5 border border-purple-700 bg-purple-700 text-white font-bold">
-                    -220
+                    -108
                   </p>
                   <p>$1,200</p>
                 </div>
                 <div className="flex flex-col gap-2 justify-center items-center">
                   <p className="py-3 px-5 border border-purple-700 bg-gray-100">
-                    -220
+                    -110
                   </p>
                   <p>$1,200</p>
                 </div>
                 <div className="flex flex-col gap-2 justify-center items-center">
                   <p className="py-3 px-5 border border-purple-700 bg-gray-100">
-                    -220
+                    -113
                   </p>
                   <p>$1,200</p>
                 </div>
