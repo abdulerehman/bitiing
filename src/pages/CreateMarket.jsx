@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Banner from "../components/Banner";
 import { ReactComponent as Arrow } from "../components/arrow.svg";
 import { ReactComponent as ArrowDown } from "../components/image 8.svg";
@@ -152,7 +152,10 @@ const ConfirmSelection = () => {
   );
 };
 
-const CreateMarket = () => {
+const CreateMarket = ({ setDisplay }) => {
+  useEffect(() => {
+    setDisplay();
+  }, []);
   const [widget, setWidget] = useState(1);
   return (
     <div className="flex-1">

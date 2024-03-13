@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Settled from "../components/Settled";
 import Matched from "../components/Matched";
 import Unmatched from "../components/UnMatched";
@@ -16,8 +16,11 @@ const Button = ({ text, active, click }) => {
   );
 };
 
-const MyBets = () => {
+const MyBets = ({ setDisplay }) => {
   const [selected, setSelected] = useState(1);
+  useEffect(() => {
+    setDisplay();
+  }, []);
   return (
     <div className="h-[88.9vh] flex-1 overflow-y-hidden">
       <div className="bg-black w-full h-14 flex items-center">

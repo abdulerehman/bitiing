@@ -1,4 +1,9 @@
-const Events = () => {
+import { useEffect } from "react";
+
+const Events = ({ setDisplay }) => {
+  useEffect(() => {
+    setDisplay();
+  }, []);
   return (
     <div className="h-[88.9vh] flex-1 overflow-y-scroll">
       <div className="bg-black w-full h-14 flex items-center">

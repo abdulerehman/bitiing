@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const RightBar = () => {
+const RightBar = ({ display }) => {
   const [weager, setWeager] = useState("X");
   const [win, setWin] = useState("Y");
 
@@ -12,11 +12,11 @@ const RightBar = () => {
   }, [window.location.pathname]);
  */
   return (
-    <div className="flex-y-1 bg-secondary">
-      <div className="bg-black h-14 flex flex-col justify-center">
+    <div className="flex-y-1 bg-secondary min-h-[100vh]">
+      <div className="bg-black h-14 py-2 flex flex-col justify-center">
         <p className="text-white text-center font-bold text-2xl">Bet Slip</p>
       </div>
-      <div className="mt-6 bg-mywhite px-4 mx-2">
+      <div className="mt-6 bg-mywhite px-4">
         <div className="flex justify-between items-center px-2 py-1">
           <p className="text-[18px]">Los Angeles Lakers</p>
           <input
@@ -59,11 +59,13 @@ const RightBar = () => {
         </div>
       </div>
 
-      <div className="bg-black py-2 mt-32 flex flex-col justify-center">
-        <button className="text-white text-center font-bold text-2xl">
-          Create Market
-        </button>
-      </div>
+      {display && (
+        <div className="bg-black py-2 mt-32 flex flex-col justify-center">
+          <button className="text-white text-center font-bold text-2xl">
+            Create Market
+          </button>
+        </div>
+      )}
     </div>
   );
 };

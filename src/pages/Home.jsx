@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Banner from "../components/Banner";
 import { ReactComponent as Pen } from "../components/image 8 (1).svg";
 import { Link } from "react-router-dom";
@@ -31,7 +32,10 @@ const Row = ({ text, yes, no }) => {
   );
 };
 
-const Home = () => {
+const Home = ({ setDisplay }) => {
+  useEffect(() => {
+    setDisplay();
+  }, []);
   return (
     <div className="h-[88.9vh] flex flex-col flex-1">
       <div className="flex items-center justify-center">
