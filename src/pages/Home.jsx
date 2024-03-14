@@ -37,7 +37,7 @@ const Home = ({ setDisplay }) => {
     setDisplay();
   }, []);
   return (
-    <div className="h-[88.9vh] flex flex-col flex-1">
+    <div className=" flex flex-col flex-1">
       <div className="flex items-center justify-center">
         <div className="flex gap-6 items-center justify-center p-4">
           <Link to="/create">

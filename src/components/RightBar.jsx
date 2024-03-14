@@ -60,7 +60,7 @@ const RightBar = ({ display }) => {
       </div>
 
       {display && (
-        <div className="bg-black py-2 mt-32 flex flex-col justify-center">
+        <div className="bg-black py-2 mt-[300px] flex flex-col justify-center">
           <button className="text-white text-center font-bold text-2xl">
             Create Market
           </button>
